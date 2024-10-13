@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         if (jugador1Turno) {
             puntosTotalesJugador1 += puntosRonda;
             puntosRonda = 0;
-            if (puntosTotalesJugador1 >= 20) {
+            if (puntosTotalesJugador1 >= 100) {
                 Toast.makeText(this, "Jugador 1 ha ganado!!!", Toast.LENGTH_LONG).show();
                 reiniciarJuego();
                 return;
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             puntosTotalesJugador2 += puntosRonda;
             puntosRonda = 0;
-            if (puntosTotalesJugador2 >= 20) {
+            if (puntosTotalesJugador2 >= 100) {
                 Toast.makeText(this, "Jugador 2 ha ganado!!!", Toast.LENGTH_LONG).show();
                 reiniciarJuego();
                 return;
